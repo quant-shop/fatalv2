@@ -1,6 +1,6 @@
 # step02 process data
 
-# install required packages
+# install required packages and load libraries
 install.packages("tidyverse")
 library(tidyverse)
 
