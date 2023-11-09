@@ -8,13 +8,13 @@ View project resources at https://github.com/quant-shop/fatalv2
 
 **Base files**:
 
-* Base files for analysis are stored in the `code` folder.
+* Base files for data process are stored in the `code` folder.
 
 * `data`
 
-  - Raw data is stored in the `data` folder
+  - Raw data is stored in the `data` folder.
   
-  - Data analysis results are stored in `output` and `report`
+  - Data analysis and results are stored in `output` and `report` folders.
 
 **Ancillary files**:
 
