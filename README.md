@@ -4,8 +4,6 @@ Analysis of [fatal police interactions](https://www.washingtonpost.com/graphics/
 
 Public files for **Morehouse Community Data Fellowship** research project.
 
-View project resources at https://github.com/quant-shop/fatalv2
-
 **Base files**:
 
 * Base files for data process are stored in the `code` folder.
@@ -27,3 +25,6 @@ View project resources at https://github.com/quant-shop/fatalv2
     - Transfer information into your `.Renviron` by inserting `CENSUS_API_KEY='your_api_key'` into the file
   
     - Insert your census API key via `Sys.getenv("CENSUS_API_KEY")`
+    
+View project resources (forthcoming) at https://github.com/quant-shop/fatalv2
+
