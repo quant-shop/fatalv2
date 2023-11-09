@@ -8,7 +8,7 @@ View project resources at https://github.com/quant-shop/fatalv2
 
 Ancillary files:
 
-* `api.R` helps new users generate a [Census API key](https://api.census.gov/data/key_signup.html).
+* `api.R` helps new users generate and store a [Census API key](https://api.census.gov/data/key_signup.html).
 
   - You should never share your Census API key. Follow the three steps below:
   
