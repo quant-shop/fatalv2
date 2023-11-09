@@ -1,6 +1,6 @@
-# step01 import data
+# step01 import raw data
 
-## ## ## import the v2 Washington Post fatal force data
+## ## ## import the raw v2 Washington Post fatal force data
 
 ### context: https://www.washingtonpost.com/graphics/investigations/police-shootings-database/
 ### content: https://github.com/washingtonpost/data-police-shootings

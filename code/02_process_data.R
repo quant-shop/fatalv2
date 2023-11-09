@@ -1,8 +1,13 @@
 # step02 process data
 
-# install required packages and load libraries
+# install packages
 install.packages("tidyverse")
+install.packages("tidyr")
+
+# load libraries
 library(tidyverse)
+library(dplyr)
+library(tidyr)
 
 # load and check data
 df <- read.csv("data/fatal_raw.csv")
