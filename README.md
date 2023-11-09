@@ -22,7 +22,9 @@ Public files for **Morehouse Community Data Fellowship** research project.
   
     - Set up an environment variable to hold your census api key with `usethis::edit_r_environ()`
 
-    - Transfer information into your `.Renviron` by inserting `CENSUS_API_KEY='your_api_key'` into the file
+    - Transfer information into your `.Renviron` (pop-up file) 
+    
+        - Insert `CENSUS_API_KEY='your_api_key'` into the `.Renviron` file
   
     - Insert your census API key via `Sys.getenv("CENSUS_API_KEY")`
     
