@@ -2,7 +2,7 @@
 
 Analysis of [fatal police interactions](https://www.washingtonpost.com/graphics/investigations/police-shootings-database/). 
 
-Base data files come from the [Fatal Force Database](https://github.com/washingtonpost/data-police-shootings) and other sources, such as US Census data. Shared here are public files for the **Community Data Fellowship** research projects at [Howard University](https://howard.edu/) and [Morehouse College](https://howard.edu/).
+Base data files come from the [Fatal Force Database](https://github.com/washingtonpost/data-police-shootings) and other sources, such as US Census data. Shared here are public files for the **Community Data Fellowship** research projects at [Howard University](https://howard.edu/) and [Morehouse College](https://morehouse.edu/).
 
 **Base files**:
 
