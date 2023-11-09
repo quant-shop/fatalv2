@@ -2,9 +2,7 @@
 
 Analysis of [fatal police interactions](https://www.washingtonpost.com/graphics/investigations/police-shootings-database/). 
 
-Base data files come from the [Fatal Force Database](https://github.com/washingtonpost/data-police-shootings). 
-
-Shared here are public files for a **Morehouse Community Data Fellowship** research project.
+Base data files come from the [Fatal Force Database](https://github.com/washingtonpost/data-police-shootings) and other sources, such as US Census data. Shared here are public files for the **Community Data Fellowship** research projects at [Howard University](https://howard.edu/) and [Morehouse College](https://howard.edu/).
 
 **Base files**:
 
@@ -29,6 +27,10 @@ Shared here are public files for a **Morehouse Community Data Fellowship** resea
         - Insert `CENSUS_API_KEY='your_api_key'` into the `.Renviron` file
   
     - Insert your census API key via `Sys.getenv("CENSUS_API_KEY")`
-    
+
+Project leads: Hye Ryeon Jang, PhD; Nathan Alexander, PhD
+
+Contributors: TBA
+
 View project resources (forthcoming) at https://github.com/quant-shop/fatalv2
 
