@@ -12,6 +12,9 @@ CENSUS_API_KEY='your_api_key'
 # insert your census API key
 Sys.getenv("CENSUS_API_KEY")
 
+# run your api key
+census_api_key("CENSUS_API_KEY")
+
 # install packages
 install.packages("tidycensus")
 
