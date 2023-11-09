@@ -6,7 +6,7 @@ Public files for **Morehouse Community Data Fellowship** research project.
 
 View project resources at https://github.com/quant-shop/fatalv2
 
-Base files:
+**Base files**:
 
 * Base files for analysis are stored in the `code` folder.
 
@@ -16,7 +16,7 @@ Base files:
   
   - Data analysis results are stored in `output` and `report`
 
-Ancillary files:
+**Ancillary files**:
 
 * `api.R` helps new users generate and store a [Census API key](https://api.census.gov/data/key_signup.html).
 
