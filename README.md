@@ -12,7 +12,7 @@ Base data files come from the [Fatal Force Database](https://github.com/washingt
 
   - All raw data is stored or saved in the `data` folder.
   
-  - Data analysis and results are stored in `output` and `report` folders.
+  - Data analysis and results are stored in `output` and `reports` folders.
 
 * **Python scripts** are located in the `python` folder.
 
