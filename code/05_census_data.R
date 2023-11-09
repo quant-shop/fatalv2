@@ -15,5 +15,6 @@ var1.values <- get_acs(geography = "state",
                              year = 2020)
 var1.values %>% 
   left_join(var1,
-            by = c("variable" = "name"))
+            by = c("variable" = "name")) %>% 
+  mutate(year = 2020)
 
