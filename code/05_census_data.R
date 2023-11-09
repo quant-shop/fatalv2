@@ -30,7 +30,17 @@ varlist
 
 # extract information from labels
 varlist1 <- labels %>% 
-  separate(label, c("l-pos1", "l-pos2", "l-pos3", "l-pos4", "l-pos5", "l-pos6", "l-pos7")) %>% 
+  separate(label, c("l-pos1", 
+                    "l-pos2", 
+                    "l-pos3", 
+                    "l-pos4", 
+                    "l-pos5", 
+                    "l-pos6", 
+                    "l-pos7")) %>% 
   select(-"l-pos1")
 varlist1
+
+
+
+
 
