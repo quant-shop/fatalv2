@@ -24,6 +24,20 @@ labels <- function(yyyy){
 labels(2020) -> labels
 labels
 
+# create years vector
+years <- data.frame(years = 2013:2021)
+years
+
+for (i in 2013:2021){
+  print(i)
+}
+
+yearz = labels(for (i in 2013:2021){
+  print(i)
+})
+yearz
+
+
 # select all variables with the same root string
 varlist = data.frame(variable=vars_select(labels$name, starts_with('B01001A')))
 varlist
@@ -41,6 +55,29 @@ varlist1 <- labels %>%
 varlist1
 
 
+# loading variable
+var1 <- load_variables(2020, "acs5") %>% 
+  filter(name=="B01001A_001")
+var1
 
+var.values <- get_acs(geography = "state",
+                      variables = varlist,
+                      year = 2020)
+
+# sex by age (White alone) in the year 2020
+var1.values <- get_acs(geography = "state",
+                       variables = "B01001A_001",
+                       year = 2020)
+
+# extract information from labels
+varlist[c("Label Head", "Label Tail")] <- str_split_i(varlist$label, '!!Total', 2)
+
+varlist1 <- varlist %>% separate(label, c("l-pos1", "l-pos2", "l-pos3", "l-pos4", "l-pos5", "l-pos6", "l-pos7"))
+
+# join data frames
+var1.values %>% 
+  left_join(var1,
+            by = c("variable" = "name")) %>% 
+  mutate(year = 2020)
 
 

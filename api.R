@@ -22,7 +22,7 @@ install.packages("tidycensus")
 library(tidycensus)
 
 # check access
-## load variable lists from the 2020 American Community Survey (ACS) 5-year estimates files
+## load variable lists from the American Community Survey (ACS) 5-year estimates files
 load_variables(2021, "acs5")
 load_variables(2020, "acs5")
 load_variables(2019, "acs5")
