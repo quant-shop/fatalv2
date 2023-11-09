@@ -30,9 +30,5 @@ Base data files come from the [Fatal Force Database](https://github.com/washingt
   
     - Insert your census API key via `Sys.getenv("CENSUS_API_KEY")`
 
-Project leads: Hye Ryeon Jang, PhD; Nathan Alexander, PhD
-
-Contributors: TBA
-
 View project resources (forthcoming) at https://github.com/quant-shop/fatalv2
 
