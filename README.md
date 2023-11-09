@@ -1,4 +1,4 @@
-# fatalv2
+# Fatal Police Interactions
 
 Analysis of [fatal police interactions](https://www.washingtonpost.com/graphics/investigations/police-shootings-database/).
 
