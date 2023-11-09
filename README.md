@@ -1,8 +1,6 @@
 # Fatal Police Interactions
 
-Analysis of [fatal police interactions](https://www.washingtonpost.com/graphics/investigations/police-shootings-database/).
-
-Public files for **Morehouse Community Data Fellowship** research project.
+Analysis of [fatal police interactions](https://www.washingtonpost.com/graphics/investigations/police-shootings-database/). Base data files come from the [Fatal Force Database](https://github.com/washingtonpost/data-police-shootings). Share here are public files for a **Morehouse Community Data Fellowship** research project.
 
 **Base files**:
 
