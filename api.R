@@ -3,8 +3,14 @@
 # prior to beginning, you must get an individualized census API key
 # request a key here: https://api.census.gov/data/key_signup.html
 
-# use your census API key
-census_api_key("YOUR KEY HERE")
+# set up an environment variable to hold your census api key
+usethis::edit_r_environ()
+
+# transfer information into your `.Renviron`
+CENSUS_API_KEY='your_api_key'
+
+# insert your census API key
+Sys.getenv("CENSUS_API_KEY")
 
 # install packages
 install.packages("tidycensus")
