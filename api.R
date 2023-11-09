@@ -1,0 +1,29 @@
+# ACCESSING US CENSUS DATA
+
+# prior to beginning, you must get an individualized census API key
+# request a key here: https://api.census.gov/data/key_signup.html
+
+# install packages
+install.packages("tidycensus")
+
+# load tidycensus package
+library(tidycensus)
+
+# use your census API key
+census_api_key("YOUR KEY HERE")
+
+# check access
+## load variable lists from the 2020 American Community Survey (ACS) 5-year estimates files
+load_variables(2021, "acs5")
+load_variables(2020, "acs5")
+load_variables(2019, "acs5")
+load_variables(2018, "acs5")
+load_variables(2017, "acs5")
+load_variables(2016, "acs5")
+load_variables(2015, "acs5")
+load_variables(2014, "acs5")
+load_variables(2013, "acs5")
+
+
+
+
