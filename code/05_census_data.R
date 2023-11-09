@@ -8,12 +8,12 @@
 varlist = data.frame(head(load_variables(2020, "acs5"), n=16))
 varlist
 
-# loading variables
+# loading variable
 var1 <- load_variables(2020, "acs5") %>% 
   filter(name=="B01001A_001")
 var1
 
-# Sex by age (White alone)
+# sex by age (White alone) in the year 2020
 var1.values <- get_acs(geography = "state",
                              variables = "B01001A_001",
                              year = 2020)
