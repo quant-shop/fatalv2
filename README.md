@@ -14,6 +14,8 @@ Base data files come from the [Fatal Force Database](https://github.com/washingt
   
   - Data analysis and results are stored in `output` and `report` folders.
 
+* **Python scripts** are located in the `python` folder.
+
 **Ancillary files**:
 
 * `api.R` helps new users generate and store a [Census API key](https://api.census.gov/data/key_signup.html).
