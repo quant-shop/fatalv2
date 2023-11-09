@@ -1,6 +1,8 @@
 # Fatal Police Interactions
 
-Analysis of [fatal police interactions](https://www.washingtonpost.com/graphics/investigations/police-shootings-database/) coding files and structure. This repo is to be used as a resource for lab members. 
+Analysis of [fatal police interactions](https://www.washingtonpost.com/graphics/investigations/police-shootings-database/).
+
+This repo containsn coding files and a structure to be used by lab members. 
 
 Base data files come from the [Fatal Force Database](https://github.com/washingtonpost/data-police-shootings) and other sources, such as US Census data. Shared here are public files for the **Community Data Fellowship** research projects at [Howard University](https://howard.edu/) and [Morehouse College](https://morehouse.edu/).
 
