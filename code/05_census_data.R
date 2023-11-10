@@ -26,8 +26,15 @@ labels
 
 # select all variables with the same root string
 varlist = data.frame(variable=vars_select(labels$name, starts_with('B01001A')))
-varlist
+varlist %>% 
+  as_tibble() # view the varlist as a tibble
+dim(varlist) # note dimensions
 
+# match varlist and labels
+df1 <- left_join(labels, varlist, by=c('name'='name', 'name'='variable'))
+df1
+
+left_join
 # extract information from labels
 varlist1 <- labels %>% 
   separate(label, c("l-pos1", 
