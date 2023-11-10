@@ -1,8 +1,6 @@
 # Fatal Police Interactions
 
-Analysis of [fatal police interactions](https://www.washingtonpost.com/graphics/investigations/police-shootings-database/). This repository contains some of the base modifications used by our lab. Visitors are welcome to examine and utilize the integration components outlined to help prepare for further analysis.
-
-Base data files come from the [Fatal Force Database](https://github.com/washingtonpost/data-police-shootings) and many other sources; here we share integrations with US Census data using [tidycensus](https://walker-data.com/tidycensus/). Shared here are public files for the **Community Data Fellowship** research projects at [Howard University](https://howard.edu/) and [Morehouse College](https://morehouse.edu/).
+Analysis of [fatal police interactions](https://www.washingtonpost.com/graphics/investigations/police-shootings-database/). This repository contains some of the base modifications used by our lab. Visitors are welcome to examine and utilize the integration components outlined to help prepare for further analysis. Base data files come from the [Fatal Force Database](https://github.com/washingtonpost/data-police-shootings) and many other sources; here we share integrations with US Census data using [tidycensus](https://walker-data.com/tidycensus/). Shared here are public files for the **Community Data Fellowship** research projects at [Howard University](https://howard.edu/) and [Morehouse College](https://morehouse.edu/).
 
 **Base files**:
 
