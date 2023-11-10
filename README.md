@@ -34,5 +34,5 @@ View project resources (forthcoming) at https://github.com/quant-shop/fatalv2
 
 Funding for this project was provided by [Data.org](https://data.org/) in collaboration with the [The University of Chicago Data Science Institute](https://datascience.uchicago.edu/) as a part of the Institute's [Capacity Accelerator Network](https://datascience.uchicago.edu/outreach/capacity-accelerator-network/).
 
-![The Capacity Accelerator Network](reports/source/fig/uchicago_can.png){50%}
+![The Capacity Accelerator Network](reports/source/fig/uchicago_can.png){width=50%}
 
