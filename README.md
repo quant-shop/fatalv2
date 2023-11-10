@@ -4,8 +4,6 @@ This repository contains some of the base modifications used by our lab in the a
 
 Shared here are the public files for the **Community Data Fellowship** research project at [Howard University](https://howard.edu/) and [Morehouse College](https://morehouse.edu/) conducted in spring 2023 and fall 2023. Lab members and collaborators should only stage and commit open code; if there are questions it likely means you should use the project's private repository.
 
-Funding for this project was provided by [Data.org](https://data.org/) in collaboration with the [The University of Chicago Data Science Institute](https://datascience.uchicago.edu/) as a part of the Institute's [Capacity Accelerator Network](https://datascience.uchicago.edu/outreach/capacity-accelerator-network/).
-
 **Base files**:
 
 * Base files for data processing are stored in the `code` folder.
@@ -33,4 +31,8 @@ Funding for this project was provided by [Data.org](https://data.org/) in collab
     - Insert your census API key via `Sys.getenv("CENSUS_API_KEY")`
 
 View project resources (forthcoming) at https://github.com/quant-shop/fatalv2
+
+Funding for this project was provided by [Data.org](https://data.org/) in collaboration with the [The University of Chicago Data Science Institute](https://datascience.uchicago.edu/) as a part of the Institute's [Capacity Accelerator Network](https://datascience.uchicago.edu/outreach/capacity-accelerator-network/).
+
+![The Capacity Accelerator Network](reports/source/fig/uchicago_can.png)
 
