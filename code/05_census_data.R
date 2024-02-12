@@ -21,19 +21,48 @@ library(survey)
 library(srvyr)
 
 ### Poverty by tract
-#### gist code edited from ehbick01 @ https://gist.github.com/ehbick01/1746d6ef2e9d5f74d0a80b83b75b2a45
+#### gist code modified from ehbick01 @ https://gist.github.com/ehbick01/1746d6ef2e9d5f74d0a80b83b75b2a45
 library(purrr)
 
 # state FIPS codes
 fips_codes
-ga <- filter(fips_codes, state == "GA") # county codes for GA
-na <- filter(fips_codes, state == "NC") # county codes for NC
-
-
 us <- unique(fips_codes$state)[1:51]
-us
+ga <- filter(fips_codes, state == "GA") # county codes for GA
+nc <- filter(fips_codes, state == "NC") # county codes for NC
 
+# tract-level population for GA
+totalpop_ga <- map_df(us, function(x) {
+  get_acs(geography = "tract",
+          variables = "B01003_001",
+          state = "GA")
+})
 
+# tract-level poverty populations for GA
+totalpov_ga <- map_df(us, function(x) {
+  get_acs(geography = "tract",
+          variables = "B17001_002",
+          state = "GA")
+})
+
+## calculate poverty rates
+
+# merge totalpop with totalpov and calculate percentpov for GA
+total_data <- totalpop_ga %>%
+  rename(total_population = estimate) %>% 
+  select(GEOID,
+         NAME,
+         total_population) %>% 
+  left_join(totalpov_ga %>% 
+              rename(total_poverty = estimate) %>% 
+              select(GEOID,
+                     NAME,
+                     total_poverty),
+            by = c("GEOID",
+                   "NAME")) %>%
+  mutate(percent_poverty = total_poverty / total_population) %>% 
+  filter(percent_poverty >= 0.35)
+
+total_data
 
 ### PUMS data (public use micro-area data)
 
