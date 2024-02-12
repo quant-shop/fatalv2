@@ -21,22 +21,21 @@ library(stringr)
 labels <- function(yyyy){
   load_variables(yyyy, "acs5")
 }
-labels(2020) -> labels
-labels
+labels(2020) -> labels.2020
+labels.2020
 
 # select all variables with the same root string
-varlist = data.frame(variable=vars_select(labels$name, starts_with('B01001A')))
-varlist %>% 
+varlist.2020 = data.frame(variable=vars_select(labels.2020$name, starts_with('B01001A')))
+varlist.2020 %>% 
   as_tibble() # view the varlist as a tibble
-dim(varlist) # note dimensions
+dim(varlist.2020) # note: dimensions = number of labels with root string
 
 # match varlist and labels
-df1 <- left_join(labels, varlist, by=c('name'='name', 'name'='variable'))
-df1
+df.labels.2020 <- right_join(labels.2020, varlist.2020, by=c('name'='variable'))
+df.labels.2020 # note: dimensions should match varlist
 
-left_join
 # extract information from labels
-varlist1 <- labels %>% 
+varlist1 <- labels.2020 %>% 
   separate(label, c("l-pos1", 
                     "l-pos2", 
                     "l-pos3", 
@@ -47,3 +46,40 @@ varlist1 <- labels %>%
   select(-"l-pos1")
 varlist1
 
+# loading variable
+var1 <- load_variables(2020, "acs5") %>% 
+  filter(name=="B01001A_001")
+var1
+
+var.values <- get_acs(geography = "state",
+                      variables = varlist,
+                      year = 2020)
+
+# sex by age (White alone) in the year 2020
+var1.values <- get_acs(geography = "state",
+                       variables = "B01001A_001",
+                       year = 2020)
+
+# extract information from labels
+varlist[c("Label Head", "Label Tail")] <- str_split_i(varlist$label, '!!Total', 2)
+
+varlist1 <- varlist %>% separate(label, c("l-pos1", "l-pos2", "l-pos3", "l-pos4", "l-pos5", "l-pos6", "l-pos7"))
+
+# join data frames
+var1.values %>% 
+  left_join(var1,
+            by = c("variable" = "name")) %>% 
+  mutate(year = 2020)
+
+# create years vector
+years <- data.frame(years = 2013:2021)
+years
+
+for (i in 2013:2021){
+  print(i)
+}
+
+yearz = labels(for (i in 2013:2021){
+  print(i)
+})
+yearz
