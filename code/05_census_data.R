@@ -5,9 +5,10 @@
 ### by running the api.R script, you will load your census API key
 
 # install packages / un-comment where needed
-# install.packages("tidycensus")
-# install.packages("tidyverse")
-# install.packages("tidyr")
+install.packages("tidycensus")
+install.packages("tidyverse")
+install.packages("tidyr")
+install.packages(c("survey", "srvyr"))
 
 # load libraries
 library(tidycensus)
@@ -16,13 +17,37 @@ library(tidyselect)
 library(dplyr)
 library(tidyr)
 library(stringr)
+library(survey)
+library(srvyr)
+
+### Poverty by tract
+#### gist code edited from ehbick01 @ https://gist.github.com/ehbick01/1746d6ef2e9d5f74d0a80b83b75b2a45
+library(purrr)
+
+# state FIPS codes
+fips_codes
+ga <- filter(fips_codes, state == "GA") # county codes for GA
+na <- filter(fips_codes, state == "NC") # county codes for NC
+
+
+us <- unique(fips_codes$state)[1:51]
+us
+
+
+
+### PUMS data (public use micro-area data)
+
+
+### Generate functions to explore data
 
 # load all variable labels for a specific year
 labels <- function(yyyy){
   load_variables(yyyy, "acs5")
 }
-labels(2020) -> labels.2020
+labels.2020 <- labels(2020)
 labels.2020
+labels.2015 <- labels(2015)
+labels.2015
 
 # select all variables with the same root string
 varlist.2020 = data.frame(variable=vars_select(labels.2020$name, starts_with('B01001A')))
