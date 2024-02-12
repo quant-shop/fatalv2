@@ -30,6 +30,17 @@ us <- unique(fips_codes$state)[1:51]
 ga <- filter(fips_codes, state == "GA") # county codes for GA
 nc <- filter(fips_codes, state == "NC") # county codes for NC
 
+
+# tract-level population 
+totalpop <- map_df(us, function(x) {
+  get_acs(geography = "tract",
+          variables = "B01003_001",
+          state = "x")
+})
+
+totalpop
+tail(totalpop)
+
 # tract-level population for GA
 totalpop_ga <- map_df(us, function(x) {
   get_acs(geography = "tract",
