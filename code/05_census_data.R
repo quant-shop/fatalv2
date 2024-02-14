@@ -20,6 +20,10 @@ library(stringr)
 library(survey)
 library(srvyr)
 
+## generate poverty rates by state; add year
+
+
+
 ### Poverty by tract
 #### gist code modified from ehbick01 @ https://gist.github.com/ehbick01/1746d6ef2e9d5f74d0a80b83b75b2a45
 library(purrr)
@@ -144,7 +148,7 @@ for (i in 2013:2021){
   print(i)
 }
 
-yearz = labels(for (i in 2013:2021){
+years = labels(for (i in 2013:2021){
   print(i)
 })
-yearz
+years
