@@ -22,7 +22,7 @@ library(srvyr)
 
 ## generate poverty rates by state; add year
 
-
+fips_codes
 
 ### Poverty by tract
 #### gist code modified from ehbick01 @ https://gist.github.com/ehbick01/1746d6ef2e9d5f74d0a80b83b75b2a45
