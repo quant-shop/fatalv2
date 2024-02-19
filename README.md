@@ -36,4 +36,4 @@ Funding for this project was provided by [Data.org](https://data.org/) in collab
 
 ![The Capacity Accelerator Network](reports/source/fig/uchicago_can.png)
 
-#### Project PIs: Nathan Alexander, PhD & Hye Ryeon Jang, PhD
+##### Project PIs: Nathan Alexander (Howard University) & Hye Ryeon Jang (Morehouse College)
