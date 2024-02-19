@@ -1,5 +1,7 @@
 # step05 census data
 
+## drafted by Nathan Alexander
+
 ## please be sure to run code in the api.R script at least once prior to beginning extraction
 ### The api.R script can be found here: https://github.com/quant-shop/fatalv2/blob/main/api.R
 ### by running the api.R script, you will load your census API key

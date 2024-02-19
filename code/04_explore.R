@@ -1,4 +1,6 @@
-# step04_01 exploratory data analysis - by year
+# step04 explore data
+
+## drafted by Hye Ryeon Jang
 
 # install packages
 install.packages("tidyverse")

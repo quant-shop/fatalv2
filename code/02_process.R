@@ -1,5 +1,7 @@
 # step02 process data
 
+## drafted by Nathan Alexander
+
 # install packages
 install.packages("tidyverse")
 install.packages("tidyr")
@@ -10,7 +12,7 @@ library(dplyr)
 library(tidyr)
 
 # load and check data
-df <- read.csv("data/fatal_raw.csv")
+df <- read.csv("data/fatalv2_raw.csv")
 df <- as_tibble(df)
 df
 tail(df) # view the tail of the data
@@ -46,9 +48,10 @@ df
 # format to 20YY
 df.year <- format(df$date, format="20%y") 
 df$year <- df.year # add column to df
+df$year <- as.numeric(df$year)
 df %>% relocate(id, date, year, state.name, state.abb) -> df
 df
 tail(df)
 
 ## write a csv file
-write.csv(df, "data/fatal_raw_02.csv")
+write.csv(df, "data/fatalv2_01.csv")
