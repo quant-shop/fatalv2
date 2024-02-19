@@ -1,8 +1,8 @@
 ## FATAL: A Study of Fatal Police Interactions in the US
 
-This repository contains some of the base modifications used by our lab in the analysis of [fatal police interactions](https://www.washingtonpost.com/graphics/investigations/police-shootings-database/). Visitors may examine and utilize the modifications outlined to help them prepare for further analysis. Base data files come from the [Fatal Force Database](https://github.com/washingtonpost/data-police-shootings) and many other sources; here we also share the integration of US Census data using the [`tidycensus`](https://walker-data.com/tidycensus/) and [`censusapi`](https://github.com/hrecht/censusapi) packages. 
+Shared here are public files for the fatal force **Community Data Fellowship** research project at [Morehouse College](https://morehouse.edu/) and [Howard University](https://howard.edu/) conducted in 2023 and 2024.
 
-Shared here are the public files for the **Community Data Fellowship** research project at [Morehouse College](https://morehouse.edu/) and [Howard University](https://howard.edu/) conducted in spring 2023 and fall 2023. Lab members and collaborators should only stage and commit open code; if there are questions it likely means you should use the project's private repository.
+This repository contains a few base modifications used by our lab in the analysis of [fatal police interactions](https://www.washingtonpost.com/graphics/investigations/police-shootings-database/). Base data files come from the [Fatal Force Database](https://github.com/washingtonpost/data-police-shootings) and various other sources; here we also share the integration of US Census data using the [`tidycensus`](https://walker-data.com/tidycensus/) and [`censusapi`](https://github.com/hrecht/censusapi) packages. 
 
 **Base files**:
 
