@@ -27,7 +27,9 @@ format:
 
 ### Case study
 
-To explore this model, we will use a case study. Our case study begins with the [Washington Post Fatal Force database](https://github.com/washingtonpost/data-police-shootings){target="_blank"}. Throughout the case study, historical and other contemporary data is combined to generate an original database. This database can be used for your analysis.
+To explore this model, we will use a case study. 
+
+Our case study begins with the [Washington Post Fatal Force database](https://github.com/washingtonpost/data-police-shootings){target="_blank"}. Throughout the case study, historical and other contemporary data is combined to generate an original database. This database can be used for your analysis.
 
 ---
 

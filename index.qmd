@@ -1,0 +1,19 @@
+---
+title: "Quantitative Histories Workshop"
+subtitle: "Lab on-boarding files"
+---
+
+## Overview
+
+These files serve as guides for new lab member orientation and on-boarding.
+
+## Lessons
+
+::: column-inset
+| Lesson |       Title       | Resources |
+|:------:|:------|--------|
+| [0](lessons/lesson00.html) | [Getting started](lessons/lesson00-slides.html) | |
+| [1](lessons/lesson01.html) |[Introduction to the Quantitative Histories Workshop Model](lessons/lesson01-slides.html) |  |
+| [2](lessons/lesson02.html) |[Case Study 1: Fatal Police Interactions](lessons/lesson02-slides.html) |  |
+:::
+

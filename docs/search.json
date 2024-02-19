@@ -4,14 +4,14 @@
     "href": "lessons/lesson01.html",
     "title": "Lesson 1",
     "section": "",
-    "text": "To explore this model, we will use a case study. Our case study begins with the Washington Post Fatal Force database. Throughout the case study, historical and other contemporary data is combined to generate an original database. This database can be used for your analysis."
+    "text": "To explore this model, we will use a case study.\nOur case study begins with the Washington Post Fatal Force database. Throughout the case study, historical and other contemporary data is combined to generate an original database. This database can be used for your analysis."
   },
   {
     "objectID": "lessons/lesson01.html#the-quantitative-histories-workshop-model",
     "href": "lessons/lesson01.html#the-quantitative-histories-workshop-model",
     "title": "Lesson 1",
     "section": "",
-    "text": "To explore this model, we will use a case study. Our case study begins with the Washington Post Fatal Force database. Throughout the case study, historical and other contemporary data is combined to generate an original database. This database can be used for your analysis."
+    "text": "To explore this model, we will use a case study.\nOur case study begins with the Washington Post Fatal Force database. Throughout the case study, historical and other contemporary data is combined to generate an original database. This database can be used for your analysis."
   },
   {
     "objectID": "lessons/lesson01.html#overview-of-fatal-force-v2-files",
@@ -46,7 +46,7 @@
     "href": "lessons/lesson01-slides.html#the-quantitative-histories-workshop-model",
     "title": "Lesson 1",
     "section": "The Quantitative Histories Workshop Model",
-    "text": "The Quantitative Histories Workshop Model\nPrep\nAnalysis\nReporting\nCase study\nTo explore this model, we will use a case study. Our case study begins with the Washington Post Fatal Force database. Throughout the case study, historical and other contemporary data is combined to generate an original database. This database can be used for your analysis."
+    "text": "The Quantitative Histories Workshop Model\nPrep\nAnalysis\nReporting\nCase study\nTo explore this model, we will use a case study.\nOur case study begins with the Washington Post Fatal Force database. Throughout the case study, historical and other contemporary data is combined to generate an original database. This database can be used for your analysis."
   },
   {
     "objectID": "lessons/lesson01-slides.html#overview-of-fatal-force-v2-files",
@@ -75,5 +75,26 @@
     "title": "Lesson 1",
     "section": "Data reporting: Creating a report",
     "text": "Data reporting: Creating a report"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Quantitative Histories Workshop",
+    "section": "",
+    "text": "These files serve as guides for new lab member orientation and on-boarding."
+  },
+  {
+    "objectID": "index.html#overview",
+    "href": "index.html#overview",
+    "title": "Quantitative Histories Workshop",
+    "section": "",
+    "text": "These files serve as guides for new lab member orientation and on-boarding."
+  },
+  {
+    "objectID": "index.html#lessons",
+    "href": "index.html#lessons",
+    "title": "Quantitative Histories Workshop",
+    "section": "Lessons",
+    "text": "Lessons\n\n\n\n\nLesson\nTitle\nResources\n\n\n\n\n0\nGetting started\n\n\n\n1\nIntroduction to the Quantitative Histories Workshop Model\n\n\n\n2\nCase Study 1: Fatal Police Interactions"
   }
 ]

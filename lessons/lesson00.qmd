@@ -1,0 +1,20 @@
+---
+title: "Lesson 0"
+subtitle: "Getting Started"
+author: "Nathan Alexander, PhD"
+institute: "Howard University"
+format: 
+  html: default
+  revealjs:
+    output-file: lesson00-slides.html
+    height: 900
+    width: 1600
+    smaller: false
+    scrollable: true
+    slide-number: c/t #< collapsted/total
+    toc: false
+    echo: true
+    incremental: false
+---
+
+
