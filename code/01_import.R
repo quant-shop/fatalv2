@@ -1,4 +1,4 @@
-# step01 import and understand data
+# step01 import data
 
 ## drafted by Nathan Alexander
 

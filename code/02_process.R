@@ -54,4 +54,4 @@ df
 tail(df)
 
 ## write a csv file
-write.csv(df, "data/fatalv2_01.csv")
+write.csv(df, "data/fatalv2_02.csv")
