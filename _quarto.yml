@@ -1,0 +1,19 @@
+project:
+  type: website
+  output-dir: docs
+  
+format:
+  html:
+    theme: 
+      light: [cosmo, theme.scss]
+      dark: [cosmo, theme-dark.scss]
+    mainfont: "Atkinson Hyperlegible"
+    callout-appearance: simple
+    colorlinnks: true
+    code-copy: true
+    code-overflow: wrap
+    toc: true
+    
+freeze: auto
+    
+editor: visual
