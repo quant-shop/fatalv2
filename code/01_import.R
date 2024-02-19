@@ -8,7 +8,7 @@
 
 ### content: https://github.com/washingtonpost/data-police-shootings
 
-### v2 files: https://github.com/washingtonpost/data-police-shootings/tree/master/v2
+### code - v2 data: https://github.com/washingtonpost/data-police-shootings/tree/master/v2
 
 fatalv2 <- read.csv("https://raw.githubusercontent.com/washingtonpost/data-police-shootings/master/v2/fatal-police-shootings-data.csv")
 
