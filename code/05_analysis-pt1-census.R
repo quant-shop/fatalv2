@@ -19,6 +19,7 @@ library(tidyr)
 library(stringr)
 library(survey)
 library(srvyr)
+library(ggplot2)
 
 # read in cleaned data
 fatal <- read.csv("data/fatal_clean.csv")

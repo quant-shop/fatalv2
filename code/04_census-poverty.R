@@ -29,4 +29,3 @@ pov2022.plot <- statepov22 %>%
   labs(title = "Poverty Rates by US State", subtitle = "2022", caption = "Based on US Decennial Census Data")
 
 ggsave("output/plots/pov2022.pdf")
-
