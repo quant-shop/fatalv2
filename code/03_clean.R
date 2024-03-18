@@ -20,9 +20,14 @@ df
 # check for missing values
 sapply(df, function(x) sum(is.na(x))) # get a count of missing values
 
+
+# imput missing values
+df.impute <- df %>% 
+
+
 # drop missing values
-df %>% 
-  drop_na() -> df
+df.drop <- df %>% 
+  drop_na()
 
 # check for missing values
 sapply(df, function(x) sum(is.na(x))) # get a count of missing values
