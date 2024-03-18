@@ -21,8 +21,12 @@ statepov22 <- pov2022 %>%
   as_tibble()
 
 statepov22
-statepov22 %>% 
+pov2022.plot <- statepov22 %>% 
   ggplot(aes(x = povper, y = reorder(Name, povper))) +
   geom_point() + 
   xlab("Poverty Rate") + ylab("State") +
   labs(title = "Poverty Rates by US State", subtitle = "2022", caption = "Based on US Decennial Census Data")
+
+pdf("output/plots/2022 Poverty Rates by State.pdf")
+print(pov2022.plot)
+dev.off
