@@ -4,6 +4,7 @@
 require(tidycensus)
 require(tidyverse)
 require(tidyr)
+library(ggplot2)
 library(tidyselect)
 library(dplyr)
 library(stringr)
@@ -30,3 +31,6 @@ pov2022.plot <- statepov22 %>%
 pdf("output/plots/2022 Poverty Rates by State.pdf")
 print(pov2022.plot)
 dev.off
+
+# ggsave("output/plots/pov2022.plot")
+
