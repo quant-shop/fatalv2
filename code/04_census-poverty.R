@@ -1,4 +1,4 @@
-# step05 census data - poverty
+# step04 census data - poverty
 
 # load libraries
 require(tidycensus)
