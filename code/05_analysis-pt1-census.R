@@ -1,7 +1,5 @@
 # step05 census data
 
-## drafted by Nathan Alexander
-
 ## please be sure to run code in the api.R script at least once prior to beginning extraction
 ### The api.R script can be found here: https://github.com/quant-shop/fatalv2/blob/main/api.R
 ### by running the api.R script, you will load your census API key
@@ -22,14 +20,28 @@ library(stringr)
 library(survey)
 library(srvyr)
 
+# read in cleaned data
+fatal <- read.csv("data/fatal_clean.csv")
+
+# census poverty rate by state (2022)
+pov2022 <- read.csv("data/poverty/SAIPE_03-18-2024.csv")
+pov2022
+
+statepov22 <- pov2022 %>% 
+  select(Name, Percent.in.Poverty) %>% 
+  mutate(povper = Percent.in.Poverty) %>% 
+  as_tibble()
+
+statepov22
+statepov22 %>% 
+  ggplot(aes(x = povper, y = reorder(Name, povper))) +
+  geom_point() + 
+  xlab(Poverty Rate) + ylab(State)
+  labs(title = "Poverty Rates by US State", subtitle = "2022", caption = "Based on US Decennial Census Data")
+
 # fips codes
 fips_codes
 
-## poverty rates by state; add year
-
-
-
-### Poverty by tract
 #### gist code modified from ehbick01 @ https://gist.github.com/ehbick01/1746d6ef2e9d5f74d0a80b83b75b2a45
 library(purrr) 
 
@@ -47,6 +59,24 @@ nc <- filter(fips_codes, state == "NC") # county codes for NC
 head(nc)
 tail(nc)
 
+
+
+
+
+# median age by state
+age2020 <- get_decennial(geography = "state",
+                         variables = "P13_001N",
+                         year = 2020,
+                         sumfile = "dhc")
+age2020
+head(age2020)
+tail(age2020)
+
+
+age2020 %>% 
+  ggplot(aes(x = value, y = reorder(NAME, value))) + 
+  geom_point()
+
 # tract-level population 
 totalpop <- map_df(us, function(x) {
   get_acs(geography = "tract",
@@ -55,7 +85,7 @@ totalpop <- map_df(us, function(x) {
 })
 
 totalpop
-tail(totalpop)
+
 
 # tract-level population for GA
 totalpop_ga <- map_df(us, function(x) {

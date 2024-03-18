@@ -1,7 +1,5 @@
 # step04 explore data
 
-## drafted by Hye Ryeon Jang
-
 # install packages
 install.packages("tidyverse")
 install.packages("tidyr")
