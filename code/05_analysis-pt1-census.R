@@ -22,20 +22,30 @@ library(stringr)
 library(survey)
 library(srvyr)
 
-## generate poverty rates by state; add year
-
+# fips codes
 fips_codes
+
+## poverty rates by state; add year
+
+
 
 ### Poverty by tract
 #### gist code modified from ehbick01 @ https://gist.github.com/ehbick01/1746d6ef2e9d5f74d0a80b83b75b2a45
-library(purrr)
+library(purrr) 
 
 # state FIPS codes
 fips_codes
 us <- unique(fips_codes$state)[1:51]
-ga <- filter(fips_codes, state == "GA") # county codes for GA
-nc <- filter(fips_codes, state == "NC") # county codes for NC
+head(us)
+tail(us)
 
+ga <- filter(fips_codes, state == "GA") # county codes for GA
+head(ga)
+tail(ga)
+
+nc <- filter(fips_codes, state == "NC") # county codes for NC
+head(nc)
+tail(nc)
 
 # tract-level population 
 totalpop <- map_df(us, function(x) {
