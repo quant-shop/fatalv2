@@ -96,5 +96,19 @@
     "title": "Quantitative Histories Workshop",
     "section": "Lessons",
     "text": "Lessons\n\n\n\n\nLesson\nTitle\nResources\n\n\n\n\n0\nGetting started\n\n\n\n1\nIntroduction to the Quantitative Histories Workshop Model\n\n\n\n2\nCase Study 1: Fatal Police Interactions"
+  },
+  {
+    "objectID": "census-extract-data.html",
+    "href": "census-extract-data.html",
+    "title": "memo: find and extract census data",
+    "section": "",
+    "text": "In this memo, I go over how to find and extract census data from specific variables by state and year in the tidycensus package.\nSome familiarity with the tidycensus package is assumed."
+  },
+  {
+    "objectID": "census-extract-data.html#overview",
+    "href": "census-extract-data.html#overview",
+    "title": "memo: find and extract census data",
+    "section": "",
+    "text": "In this memo, I go over how to find and extract census data from specific variables by state and year in the tidycensus package.\nSome familiarity with the tidycensus package is assumed."
   }
 ]
